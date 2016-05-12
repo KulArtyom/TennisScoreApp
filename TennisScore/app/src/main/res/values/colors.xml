@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#443d31</color>
+    <color name="colorPrimaryDark">#443d31</color>
+    <color name="colorAccent">#443d31</color>
+
+    <color name="greenLight">#7db200</color>
+    <color name="greenDark">#689300</color>
+
+    <color name="orangePlus">#ff702c</color>
+    <color name="orangeLight">#f26522</color>
+    <color name="orangeDark">#d1561c</color>
+
+    <color name="lightGray">#ededed</color>
+    <color name="darkGray">#d4d1d1</color>
+    <color name="nameTextColor">#1c1c1c</color>
+    <color name="nameBgColor">#f9f9f9</color>
+
+    <color name="color_pb_progress">#443d31</color>
+    <color name="color_pb">#9f8f74</color>
+
+    <color name="color_bg_splash_activity">#908169</color>
+
+    <color name="color_bg_table">#19ffffff</color>
+
+    <color name="color_btn_add_points_enable">#443d31</color>
+    <color name="color_btn_add_points_disable">#685d4a</color>
+
+    <color name="color_et_hint_dialog_settings">#646464</color>
+</resources>

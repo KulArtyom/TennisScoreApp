@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="toolbar_height">40dp</dimen>
+
+    <dimen name="names_left_padding">8dp</dimen>
+
+    <dimen name="play_icon_size">11dp</dimen>
+    <dimen name="play_icon_margin_right">3dp</dimen>
+
+    <dimen name="main_width">300dp</dimen>
+
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="half_padding">5dp</dimen>
+    <dimen name="half_margin">5dp</dimen>
+
+    <dimen name="dialog_width">300dp</dimen>
+    <dimen name="dialog_height">250dp</dimen>
+
+    <dimen name="btn_plus_width">45dp</dimen>
+    <dimen name="btn_plus_height">33dp</dimen>
+    <dimen name="main_btns_height">40dp</dimen>
+
+    <dimen name="stroke_size">1dp</dimen>
+    <dimen name="name_width">100dp</dimen>
+    <dimen name="small_btns_width">87dp</dimen>
+
+    <dimen name="text_size_tiny">9sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_plus">25sp</dimen>
+    <dimen name="text_size_scores">16dp</dimen>
+    <dimen name="text_size_main_btns">15sp</dimen>
+    <dimen name="text_size_names">13sp</dimen>
+</resources>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_backgroung"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="20dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_scores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_score"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/ll_plus_btns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ll_scores_two"
+                    android:layout_alignTop="@+id/ll_scores_one"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_plus_one"
+                        android:layout_width="@dimen/btn_plus_width"
+                        android:layout_height="@dimen/btn_plus_height"
+                        android:background="@drawable/button_plus"
+                        android:stateListAnimator="@null"
+                        android:text="@string/plus"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_plus" />
+
+                    <Button
+                        android:id="@+id/btn_plus_two"
+                        android:layout_width="@dimen/btn_plus_width"
+                        android:layout_height="@dimen/btn_plus_height"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/button_plus"
+                        android:stateListAnimator="@null"
+                        android:text="@string/plus"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_plus"  />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_names"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/ll_scores_two"
+                    android:layout_alignTop="@id/ll_scores_one"
+                    android:layout_toRightOf="@id/ll_plus_btns">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/name_width"
+                        android:layout_height="@dimen/btn_plus_height"
+                        android:background="@drawable/bg_score"
+                        android:paddingBottom="@dimen/stroke_size"
+                        android:paddingLeft="@dimen/names_left_padding"
+                        android:paddingRight="@dimen/half_padding"
+                        android:paddingTop="@dimen/stroke_size">
+
+                        <TextView
+                            android:id="@+id/tv_name_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/nameTextColor"
+                            android:textSize="@dimen/text_size_names" />
+
+                        <ImageView
+                            android:id="@+id/iv_player_one_indicator"
+                            android:layout_width="@dimen/play_icon_size"
+                            android:layout_height="@dimen/play_icon_size"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/play_icon_margin_right"
+                            android:src="@drawable/point_ball" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/name_width"
+                        android:layout_height="@dimen/btn_plus_height"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/bg_score"
+                        android:paddingBottom="@dimen/stroke_size"
+                        android:paddingLeft="@dimen/names_left_padding"
+                        android:paddingRight="@dimen/half_padding"
+                        android:paddingTop="@dimen/stroke_size">
+
+                        <TextView
+                            android:id="@+id/tv_name_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/stroke_size"
+                            android:layout_marginTop="@dimen/stroke_size"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/nameTextColor"
+                            android:textSize="@dimen/text_size_names" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_player_two_indicator"
+                            android:layout_width="@dimen/play_icon_size"
+                            android:layout_height="@dimen/play_icon_size"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/play_icon_margin_right"
+                            android:src="@drawable/point_ball" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_scores_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_plus_height"
+                    android:layout_toRightOf="@id/ll_names"
+                    android:background="@drawable/bg_score"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_points_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/orangePlus"
+                        android:textSize="@dimen/text_size_scores"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/stroke_size"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_pb_progress" />
+
+                    <TextView
+                        android:id="@+id/tv_game_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_scores"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/stroke_size"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_pb_progress" />
+
+                    <TextView
+                        android:id="@+id/tv_sets_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_scores"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_scores_titles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_scores_one"
+                    android:layout_toRightOf="@id/ll_names"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/stroke_size">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/half_padding"
+                        android:text="@string/points"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_tiny" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/half_padding"
+                        android:text="@string/games"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_tiny" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/half_padding"
+                        android:text="@string/sets"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_tiny" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_scores_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_plus_height"
+                    android:layout_below="@id/ll_scores_titles"
+                    android:layout_toRightOf="@id/ll_names"
+                    android:background="@drawable/bg_score"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_points_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/orangePlus"
+                        android:textSize="@dimen/text_size_scores"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/stroke_size"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_pb_progress" />
+
+                    <TextView
+                        android:id="@+id/tv_game_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_scores"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/stroke_size"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_pb_progress" />
+
+                    <TextView
+                        android:id="@+id/tv_sets_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_scores"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_sound_toggler"
+                    android:layout_width="@dimen/small_btns_width"
+                    android:layout_height="@dimen/btn_plus_height"
+                    android:layout_marginRight="@dimen/half_margin"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/button_plus"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/half_padding"
+                    android:stateListAnimator="@null">
+
+                    <TextView
+                        android:id="@+id/tv_audio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="@string/audio"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <ImageView
+                        android:id="@+id/iv_sound_icon"
+                        android:layout_width="33dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:src="@drawable/ic_volume_on" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_undo"
+                    android:layout_width="@dimen/small_btns_width"
+                    android:layout_height="@dimen/btn_plus_height"
+                    android:layout_marginLeft="@dimen/half_margin"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/button_plus"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:stateListAnimator="@null">
+
+                    <TextView
+                        android:id="@+id/tv_undo"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="@string/undo"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="@dimen/half_margin"
+                        android:clickable="false"
+                        android:src="@drawable/ic_undo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btns_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_plus"
+                    android:stateListAnimator="@null"
+                    android:text="@string/start_new_match"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_main_btns" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <Button
+                    android:id="@+id/btn_stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btns_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_plus"
+                    android:stateListAnimator="@null"
+                    android:text="@string/stop_match"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_main_btns" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
