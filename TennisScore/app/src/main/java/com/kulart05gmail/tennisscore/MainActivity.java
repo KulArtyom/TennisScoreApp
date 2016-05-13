@@ -5,7 +5,7 @@ import android.drm.DrmStore;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.NotificationCompatBase;
+
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -247,11 +247,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void toggleAudioMute() {
         mGame.toggleMute();
         if (mMuted) {
-          // mIvSoundIcon.setBackgroundResource(R.drawable.ic_volume_on);
-            mLlSoundToggler.setBackgroundResource(R.color.color_pb_progress);
+           mIvSoundIcon.setBackgroundResource(R.drawable.ic_volume_on);
+           // mLlSoundToggler.setBackgroundResource(R.color.color_pb_progress);
         } else {
-          // mIvSoundIcon.setBackgroundResource(R.drawable.ic_volume);
-            mLlSoundToggler.setBackgroundResource(R.color.color_pb);
+           mIvSoundIcon.setBackgroundResource(R.drawable.ic_volume_off);
+           // mLlSoundToggler.setBackgroundResource(R.color.color_pb_progress);
         }
         mMuted = !mMuted;
     }

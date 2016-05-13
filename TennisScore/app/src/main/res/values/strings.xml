@@ -23,4 +23,9 @@
     <string name="no">No</string>
 
     <string name="confirm_new_match_title">Are you Sure You want to Start a New Match?</string>
+    <string name="confirm_exit_app">Are you sure you want exit?</string>
+
+
+    //Facebook
+    <string name="facebook_app_id">571376993042160</string>
 </resources>

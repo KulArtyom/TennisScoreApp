@@ -294,7 +294,7 @@
                     android:layout_height="@dimen/btn_plus_height"
                     android:layout_marginRight="@dimen/half_margin"
                     android:addStatesFromChildren="true"
-                    android:background="@drawable/button_plus"
+                    android:background="@drawable/dialogs_btn"
                     android:clickable="true"
                     android:gravity="center"
                     android:orientation="horizontal"
@@ -309,16 +309,16 @@
                         android:clickable="false"
                         android:gravity="center"
                         android:text="@string/audio"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/color_pb"
                         android:textSize="@dimen/text_size_small" />
 
                     <ImageView
                         android:id="@+id/iv_sound_icon"
-                        android:layout_width="33dp"
+                        android:layout_width="20dp"
                         android:layout_marginLeft="4dp"
                         android:layout_height="wrap_content"
                         android:clickable="false"
-                        android:src="@drawable/ic_volume_on" />
+                        android:background="@drawable/ic_volume_on" />
 
                 </LinearLayout>
 
@@ -328,7 +328,7 @@
                     android:layout_height="@dimen/btn_plus_height"
                     android:layout_marginLeft="@dimen/half_margin"
                     android:addStatesFromChildren="true"
-                    android:background="@drawable/button_plus"
+                    android:background="@drawable/dialogs_btn"
                     android:clickable="true"
                     android:gravity="center"
                     android:orientation="horizontal"
@@ -342,16 +342,15 @@
                         android:clickable="false"
                         android:gravity="center"
                         android:text="@string/undo"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/color_pb"
                         android:textSize="@dimen/text_size_small" />
 
                     <ImageView
-                        android:layout_width="11dp"
+                        android:layout_width="20dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="2dp"
                         android:layout_marginLeft="@dimen/half_margin"
                         android:clickable="false"
-                        android:src="@drawable/ic_undo" />
+                        android:src="@drawable/ic_undo_c" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -366,10 +365,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/main_btns_height"
                     android:layout_weight="1"
-                    android:background="@drawable/button_plus"
+                    android:background="@drawable/dialogs_btn"
                     android:stateListAnimator="@null"
                     android:text="@string/start_new_match"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/color_pb"
                     android:textSize="@dimen/text_size_main_btns" />
 
                 <View
@@ -381,10 +380,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/main_btns_height"
                     android:layout_weight="1"
-                    android:background="@drawable/button_plus"
+                    android:background="@drawable/dialogs_btn"
                     android:stateListAnimator="@null"
                     android:text="@string/stop_match"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/color_pb"
                     android:textSize="@dimen/text_size_main_btns" />
 
             </LinearLayout>
